@@ -1,0 +1,124 @@
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+ }
+.groot{
+   width: 100%;
+   min-height: 100vh;
+   background-image: url(/images/bg.jpg);
+   background-position: center;
+   background-size: cover;
+   padding: 10px 10%;
+   overflow: hidden;
+   position: absolute;
+}
+ 
+   
+nav{
+   padding: 10px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    
+}
+ 
+.logo{
+   width: 120px;
+   border-color: none;
+   border-radius: 60%;
+   filter:drop-shadow(16px 7px 8px #777676);
+
+
+}
+
+nav ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 10px 15px;
+   animation-delay: 1.5s;
+}
+ 
+nav ul li a{
+   text-decoration: none;
+   color:rgba(red,#71d4c7 , #f2ff00,0.2) ;
+   font-weight: 400;
+}
+.login-btn{
+   text-decoration: none;
+   list-style:none;
+   margin-right:15px ;
+   font-weight:400 ;
+
+}
+ .btn{
+   display: inline-block;
+   text-decoration: none;
+   padding: 14px 40px;
+   color:#fff ;
+   background : linear-gradient(45deg, #df4881, #c430d7);
+   font-size: 14px;
+   border-radius: 30px;
+   border-top-right-radius: 0;
+   box-shadow: 0 0 1rem #df4881;
+}
+.content{
+   margin-top: 80px;
+   max-width: 600px;
+}
+.content h1{
+   font-size: 70px;
+   color: #222;
+}
+.content p{
+   margin: 20px 0;
+   color: #333;
+   animation-delay: .5s;
+   
+}
+.content .btn{
+   padding: 15px 80px;
+   font-size: 16px;
+   animation-delay: 1.0s;
+}
+.btn:hover{
+   transition: all 0.2s ease-in-out;
+   border-top-right-radius: 30px;
+
+}
+.feature-img{
+   width:650px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   filter: drop-shadow(16px 7px 8px #333);
+}
+
+.feature-img.anim {
+   animation-delay: 1.5s;
+}
+.anim {
+   opacity: 0;
+   transform: translateY(3rem);
+   animation: moveup 0.5s linear forwards;
+
+}
+@keyframes moveup{
+   100%{
+      opacity: 1;
+      transform: translateY(30px);
+   }
+}
+
+.tion{
+   opacity: 0;
+   transform: translateX(40px);
+   animation: moveleft 1s linear forwards;
+}
+@keyframes moveleft{
+   100%{
+      opacity: 1;
+      transform: translateX(30px);
+   }
+}
